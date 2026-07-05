@@ -1,3 +1,20 @@
+// Mobile nav toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('nav-toggle');
+  const panel = document.getElementById('nav-mobile-panel');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', () => {
+    const isOpen = panel.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', () => {
+      panel.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+});
+
 // Scroll reveal
 (function () {
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
