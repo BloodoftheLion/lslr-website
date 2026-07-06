@@ -491,6 +491,60 @@
   .coach-role { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
   .coach-bio { font-size: 14.5px; line-height: 1.65; color: var(--steel); }
 
+  /* ===== FULL COACH PROFILE (rich content) ===== */
+  .coach-profile {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 44px;
+    padding: 48px 0;
+    border-bottom: 1px solid var(--hairline-dark);
+  }
+  .coach-profile:first-of-type { border-top: 1px solid var(--hairline-dark); }
+  .coach-profile-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    border: 3px solid var(--red);
+    object-fit: cover;
+  }
+  .coach-profile-name { font-family: var(--display); font-weight: 700; font-size: 30px; color: var(--navy); line-height: 1.1; margin-bottom: 6px; }
+  .coach-profile-role { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin-bottom: 28px; }
+  .coach-section { margin-bottom: 22px; }
+  .coach-section-title {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+    margin-bottom: 8px;
+  }
+  .coach-section p { font-size: 15px; line-height: 1.7; color: var(--steel); }
+  .coach-rapid-fire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 28px 0;
+    padding: 20px 24px;
+    background: var(--paper);
+    border-radius: 4px;
+  }
+  .rapid-fire-item .label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--steel-light); margin-bottom: 4px; }
+  .rapid-fire-item .value { font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--navy); }
+  .coach-final-thought {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--navy);
+    border-left: 3px solid var(--royal);
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+  @media (max-width: 720px) {
+    .coach-profile { grid-template-columns: 1fr; }
+    .coach-profile-photo { max-width: 260px; }
+  }
+
   /* ===== PRIVATE LESSONS ===== */
   .lesson-intro { max-width: 640px; font-size: 16.5px; line-height: 1.75; color: var(--steel); margin-bottom: 48px; }
   .lesson-intro strong { color: var(--navy); }
