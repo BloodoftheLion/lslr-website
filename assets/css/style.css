@@ -364,6 +364,29 @@
   .footer-bottom a { color: var(--steel-light); }
   .footer-bottom a:hover { color: var(--white); }
 
+  /* ===== SOCIAL ICONS ===== */
+  .social-icons { display: flex; gap: 12px; margin-top: 4px; }
+  .social-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--hairline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.8);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .social-icon-btn:hover, .social-icon-btn:focus-visible {
+    background: var(--red);
+    border-color: var(--red);
+    color: var(--white);
+  }
+  .social-icon-btn svg { width: 18px; height: 18px; fill: currentColor; }
+  .social-icons-light .social-icon-btn { background: rgba(10,22,40,0.05); border-color: var(--hairline-dark); color: var(--steel); }
+  .social-icons-light .social-icon-btn:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+
   /* Reveal on scroll */
   .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.is-visible { opacity: 1; transform: translateY(0); }
