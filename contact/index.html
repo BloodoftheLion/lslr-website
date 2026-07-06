@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Lone Star Locker Room</title>
-<meta name="description" content="Lone Star Locker Room is a youth select baseball organization in Saginaw / North Fort Worth, TX built on player development, not roster shuffling.">
+<title>Contact | Lone Star Locker Room</title>
+<meta name="description" content="Get in touch with Lone Star Locker Room. No pressure, no obligation.">
 <link rel="icon" type="image/png" href="/assets/img/lslr-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,76 +19,75 @@
       <div class="wordmark">Lone Star <span>Locker Room</span></div>
     </a>
     <div class="nav-links">
-      <a href="#top" class="active">Home</a>
+      <a href="/">Home</a>
       <a href="/philosophy/">Philosophy</a>
       <a href="/teams/">Teams</a>
       <a href="/coaches/">Coaches</a>
-      <a href="/contact/">Contact</a>
+      <a href="#top" class="active">Contact</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile-panel" id="nav-mobile-panel">
-      <a href="#top" class="active">Home</a>
+      <a href="/">Home</a>
       <a href="/philosophy/">Philosophy</a>
       <a href="/teams/">Teams</a>
       <a href="/coaches/">Coaches</a>
-      <a href="/contact/">Contact</a>
+      <a href="#top" class="active">Contact</a>
   </div>
 </nav>
 
 
-<section class="hero" id="top">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow">Lone Star Locker Room &middot; Est. 2026</div>
-      <h1>Every roster spot is <em>earned</em>. Every roster spot stays <em>earned</em>.</h1>
-      <p class="hero-sub">We're a youth baseball organization built around one job: developing your son into the player, and the person, he's capable of becoming. Real coaching relationships, a roster that feels like family, and a long-term plan for where he's headed next.</p>
-      <div class="hero-ctas">
-        <a href="/philosophy/" class="btn btn-primary">Read Our Philosophy</a>
-        <a href="/contact/" class="btn btn-secondary">Say Hello</a>
-      </div>
-    </div>
-    <div class="hero-mark-wrap">
-      <img src="/assets/img/lslr-primary.png" alt="Lone Star Locker Room Legends logo" class="mark mark-hero">
-    </div>
+<section class="page-hero" id="top">
+  <div class="container page-hero-inner">
+    <div class="eyebrow">Get In Touch</div>
+    <h1>Say hello.</h1>
+    <p class="page-hero-sub">No pressure, no obligation &mdash; we just want to get to know you and your player.</p>
   </div>
 </section>
 
-<div style="height: 3px; background: var(--red);"></div>
-<div class="mission-band">
-  <div class="container">
-    <p class="mission-line">Coaching together since 2020 &nbsp;/&nbsp; One philosophy: develop the player, not just the season</p>
-  </div>
-</div>
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="phil-header reveal" style="margin-bottom: 30px;">
-      <div class="eyebrow" style="color: var(--royal);">Our Philosophy</div>
-      <h2>We are not chasing <em>rings</em>.</h2>
+<section class="section">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <form id="interest-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Parent / Guardian Name</label>
+            <input type="text" id="f-name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-age">Player Age</label>
+            <input type="text" id="f-age" name="age">
+          </div>
+          <div class="form-group">
+            <label for="f-position">Primary Position</label>
+            <input type="text" id="f-position" name="position">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Message (optional)</label>
+          <textarea id="f-message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+        <p class="form-note">This opens an email to lonestarlockerroom@gmail.com with your info filled in &mdash; nothing is sent automatically, and there's no follow-up obligation on your end.</p>
+      </form>
     </div>
-    <div class="phil-body reveal">
-      <p>Plenty of programs will tell you they're about player development. We built Lone Star Locker Room to actually run on it &mdash; practices built around real skill progression, coaches who know each kid's game, and a roster philosophy that plans years ahead instead of one tournament at a time.</p>
-    </div>
-    <a href="/philosophy/" class="btn btn-secondary reveal" style="display:inline-block; margin-top:28px; border-color: var(--hairline-dark); color: var(--navy);">Read The Full Philosophy</a>
-  </div>
-</section>
 
-<section class="section" style="padding-top: 0;">
-  <div class="container">
-    <div class="eyebrow reveal" style="color: var(--royal);">Our Teams</div>
-    <h2 class="reveal" style="margin-bottom: 30px;">Legends <em>11U</em></h2>
-    <div class="team-card reveal">
-      <div class="team-card-band">
-        <h3>Legends 11U</h3>
-        <span class="team-status">Fall 2026 Season</span>
-      </div>
-      <div class="team-card-body">
-        <p>Our inaugural roster &mdash; 12 families building this program from the ground up. Competing on the USSSA and NCS circuits this fall, coached by Miles, Josh, and Luis.</p>
-        <a href="/teams/" class="btn btn-primary">View Team Details</a>
-      </div>
+    <div class="contact-side reveal">
+      <div class="footer-col-title">Prefer email directly?</div>
+      <a href="mailto:lonestarlockerroom@gmail.com">lonestarlockerroom@gmail.com</a>
+      <p>We read every message ourselves &mdash; no call center, no automated funnel.</p>
+      <div class="footer-col-title">Follow Along</div>
+      <a href="https://www.facebook.com/LoneStarLockerRoom" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/lonestarlockerroom" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@lonestarlockerroom" target="_blank" rel="noopener">TikTok</a>
     </div>
   </div>
 </section>
